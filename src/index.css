@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --black-gradient: linear-gradient(45deg, #000000, #535151);
+  --white-gradient: linear-gradient(45deg, #ffffff, #a49f9e);
+  --silver-gradient: linear-gradient(45deg, #bdbcbd, #898584);
+  --gold-gradient: linear-gradient(45deg, #bc884d, #b79b58);
+  --grey-gradient: linear-gradient(45deg, #515051, #827c7c);
+  --blue-gradient: linear-gradient(45deg, #1da1f2, #11518a);
+  --pink-gradient: linear-gradient(45deg, #e6aedc, #c695c6);
+  --red-gradient: linear-gradient(45deg, #d5135a, #f02424);
+  --green-gradient: linear-gradient(45deg, #0d6e10, #0c4f0c);
+  --yellow-gradient: linear-gradient(45deg, #eae315, #d0bd15);
+  --purple-gradient: linear-gradient(45deg, #5a13d5, #39274e);
+  --orange-gradient: linear-gradient(45deg, #e6780a, #963c00);
+
+}
+body {
+  font-family: 'SF Pro', sans-serif;
+  background-color: black;
+  color: white;
+}
