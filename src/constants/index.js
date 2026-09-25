@@ -3,3 +3,7 @@ const navLinks = [
     { name: "Timeline", path: "/timeline" },
     { name: "Gallery", path: "/gallery" },
 ];
+
+export {
+    navLinks
+}

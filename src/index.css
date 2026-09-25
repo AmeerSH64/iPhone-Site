@@ -13,10 +13,106 @@
   --yellow-gradient: linear-gradient(45deg, #eae315, #d0bd15);
   --purple-gradient: linear-gradient(45deg, #5a13d5, #39274e);
   --orange-gradient: linear-gradient(45deg, #e6780a, #963c00);
-
+  --color-primary: #0071e3;
+  --color-dark-100: #86868b;
+  --color-dark-200: #2e2e30;
+  --color-light-100: #adb5bd;
 }
+
+html {
+  width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
 body {
+  width: 100vw;
+  overflow-x: hidden;
   font-family: 'SF Pro', sans-serif;
   background-color: black;
   color: white;
+}
+
+@utility flex-center {
+  @apply flex items-center justify-center;
+}
+
+@utility flex-between {
+  @apply flex items-center justify-between;
+}
+
+@utility col-center {
+  @apply flex flex-col items-center justify-center;
+}
+
+@utility abs-center {
+  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+}
+
+@utility h3-semibold {
+  @apply font-semibold text-xl text-dark-100;
+}
+
+@utility base-semibold {
+  @apply font-semibold text-base text-dark-100;
+}
+
+@utility small-medium {
+  @apply font-medium text-xs;
+}
+
+@layer components {
+  header {
+    @apply w-screen fixed top-0 left-0 z-50 flex-center bg-black/55 backdrop-blur-2xl min-h-[7vh];
+
+    nav {
+      @apply container mx-auto flex-between px-5 2xl:px-0;
+
+      img {
+        @apply cursor-pointer hover:-translate-y-0.5 transition-all duration-300 ease-in-out;
+      }
+
+      ul {
+        @apply flex-center gap-8;
+      }
+    }
+  }
+
+  .home {
+    @apply mt-40 flex-center gap-4;
+
+    .duo-home {
+      @apply rounded-2xl w-500 h-250 flex-center flex-col;
+
+      video {
+        @apply h-250;
+
+        box-shadow: 0px 0px 14px rgb(255, 255, 255);
+      }
+
+      .duo-home-text {
+        @apply text-black text-center -translate-y-30;
+      }
+    }
+
+    .home-grid-box {
+      @apply flex-center flex-col;
+
+      img {
+        @apply rounded-2xl h-150;
+
+        box-shadow: 0px 0px 20px rgb(65, 23, 30);
+      }
+
+      p {
+        @apply text-center -translate-y-10 text-2xl;
+      }
+
+      &:nth-child(2) {
+        img {
+          box-shadow: 0px 0px 20px rgb(61, 61, 61);
+        }
+      }
+    }
+  }
 }
