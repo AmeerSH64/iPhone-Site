@@ -96,16 +96,16 @@ body {
     }
 
     .home-grid-box {
-      @apply flex-center flex-col;
+      @apply flex-center flex-col rounded-2xl;
 
       img {
-        @apply rounded-2xl h-150;
+        @apply rounded-2xl h-150 w-full;
 
         box-shadow: 0px 0px 20px rgb(65, 23, 30);
       }
 
       p {
-        @apply text-center -translate-y-10 text-2xl;
+        @apply text-center text-2xl -translate-y-10;
       }
 
       &:nth-child(2) {
@@ -113,6 +113,50 @@ body {
           box-shadow: 0px 0px 20px rgb(61, 61, 61);
         }
       }
+    }
+  }
+
+  .iPhone-2G {
+    @apply bg-white w-screen;
+
+    .promo {
+      @apply flex-center h-full flex-col;
+
+      .year {
+        @apply text-black text-8xl font-bold top-[50%] left-[50%] h-screen w-full;
+      }
+
+      .all-in-one {
+        @apply flex-center gap-4;
+      }
+
+      .icon {
+        @apply w-20 h-20;
+      }
+
+      .text {
+        @apply text-black;
+
+        h3 {
+          @apply text-2xl font-bold;
+        }
+      }
+
+      .reveal {
+        @apply flex-center flex-col;
+      }
+    }
+  }
+
+  .iPhone-3G {
+    @apply h-screen w-screen;
+  }
+
+  .gallery {
+    @apply mt-20 flex-center gap-4;
+
+    h1 {
+      @apply text-4xl;
     }
   }
 }

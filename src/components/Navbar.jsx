@@ -1,8 +1,15 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 import { navLinks } from '../constants'
+import gsap from 'gsap'
+import { useGSAP } from '@gsap/react'
 
 const Navbar = () => {
+    useGSAP(() => {
+        gsap.from('nav', {
+            y: -50, duration: 0.5, ease: 'power1.inOut',
+        })
+    }, []);
+
   return (
     <header>
         <nav>
