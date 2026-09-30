@@ -7,8 +7,10 @@
   --gold-gradient: linear-gradient(45deg, #bc884d, #b79b58);
   --grey-gradient: linear-gradient(45deg, #515051, #827c7c);
   --blue-gradient: linear-gradient(45deg, #1da1f2, #11518a);
-  --pink-gradient: linear-gradient(45deg, #e6aedc, #c695c6);
+  --pink-gradient: linear-gradient(45deg, #ff41dc, #8e0066);
+  --rose-gradient: linear-gradient(45deg, #e6aedc, #c695c6);
   --red-gradient: linear-gradient(45deg, #d5135a, #f02424);
+  --burgundy-gradient: linear-gradient(45deg, #5e0c2a, #350505);
   --green-gradient: linear-gradient(45deg, #0d6e10, #0c4f0c);
   --yellow-gradient: linear-gradient(45deg, #eae315, #d0bd15);
   --purple-gradient: linear-gradient(45deg, #5a13d5, #39274e);
@@ -157,6 +159,26 @@ body {
 
     h1 {
       @apply text-4xl;
+    }
+
+    .gallery-card {
+      @apply flex-center flex-col rounded-2xl w-50 h-45 md:w-100 md:h-80 gap-2 bg-white text-black text-center;
+
+      .img-container {
+        @apply w-30 h-30 md:w-80 md:h-60;
+      }
+
+      img {
+        @apply relative w-full h-full object-contain;
+      }
+
+      h4 {
+        @apply font-bold;
+      }
+
+      button {
+        @apply flex-center w-25 md:w-55 bg-(--red-gradient);
+      }
     }
   }
 }

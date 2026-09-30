@@ -2,11 +2,14 @@ import React from 'react'
 
 const GalleryCard = ({ colour, model, image }) => {
   return (
-    <div>
-        <img src={image.src} alt="Phone" />
-        <div>
-            <h4>{model}</h4>
-        </div>
+    <div className='gallery-card'>
+      <div className='img-container'>
+        <img src={image} alt="Phone" />
+      </div>
+      <div>
+        <h4>{model}</h4>
+        <button>View</button>
+      </div>
     </div>
   )
 }
