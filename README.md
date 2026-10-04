@@ -15,3 +15,13 @@ The React Compiler is not enabled on this template because of its impact on dev 
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 # iPhone-Site
+
+This site focuses on the iPhone and it's history. The design is inspired by Apple's own website but also has its own touches with GSAP animations.
+
+There are three pages, home, timeline and gallery. The timline page is the main page of the site, as it goes all the way through the iPhone's history from the first model to the latest.
+
+The gallery page allows you to look at each model and all of the colours they are available in.
+
+## How to Use
+
+First run npm install, and then run npm run dev.

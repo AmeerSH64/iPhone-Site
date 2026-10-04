@@ -1,6 +1,6 @@
 import React from 'react'
 
-const GalleryCard = ({ colour, model, image }) => {
+const GalleryCard = ({ colour, model, image, onClick }) => {
   return (
     <div className='gallery-card'>
       <div className='img-container'>
@@ -8,7 +8,7 @@ const GalleryCard = ({ colour, model, image }) => {
       </div>
       <div>
         <h4>{model}</h4>
-        <button>View</button>
+        <button onClick={onClick}>View</button>
       </div>
     </div>
   )

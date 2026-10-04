@@ -19,34 +19,36 @@ const Timeline = () => {
     <section id="timeline" className='timeline'>
       <div className="iPhone-2G">
         <div className='promo'>
-          <div className='year'>
+          <div ref={yearRef} className='year'>
             <h1>2007</h1>
           </div>
-          <div className='phone all-in-one'>
-            <img src="/images/icons/iOS/phone.jpg" className='icon' alt="Phone Icon" />
-            <div className='text'>
-              <h3>Phone</h3>
-              <p>Revolutionary Phone</p>
+          <div className='flex-center flex-row gap-10 mb-20 h-screen w-screen'>
+            <div className='phone all-in-one'>
+              <img src="/images/icons/iOS/phone.jpg" className='icon' alt="Phone Icon" />
+              <div className='text'>
+                <h3>Phone</h3>
+                <p>Revolutionary Phone</p>
+              </div>
             </div>
-          </div>
-          <div>
-            <IconPlusFilled className='text-black w-15 h-15' />
-          </div>
-          <div className='iPod all-in-one'>
-            <img src="/images/icons/iOS/iPod.png" className='icon' alt="iPod Icon" />
-            <div className="text">
-              <h3>iPod</h3>
-              <p>Widescreen iPod</p>
+            <div>
+              <IconPlusFilled className='text-black w-15 h-15' />
             </div>
-          </div>
-          <div>
-            <IconPlusFilled className='text-black w-15 h-15' />
-          </div>
-          <div className="internet all-in-one">
-            <img src="/images/icons/iOS/internet-icon.png" className='icon' alt="Internet Icon" />
-            <div className="text">
-              <h3>Internet</h3>
-              <p>Breakthrough Internet Device</p>
+            <div className='iPod all-in-one'>
+              <img src="/images/icons/iOS/iPod.png" className='icon' alt="iPod Icon" />
+              <div className="text">
+                <h3>iPod</h3>
+                <p>Widescreen iPod</p>
+              </div>
+            </div>
+            <div>
+              <IconPlusFilled className='text-black w-15 h-15' />
+            </div>
+            <div className="internet all-in-one">
+              <img src="/images/icons/iOS/internet-icon.png" className='icon' alt="Internet Icon" />
+              <div className="text">
+                <h3>Internet</h3>
+                <p>Breakthrough Internet Device</p>
+              </div>
             </div>
           </div>
           <div className='reveal'>

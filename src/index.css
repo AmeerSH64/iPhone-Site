@@ -177,7 +177,31 @@ body {
       }
 
       button {
-        @apply flex-center w-25 md:w-55 bg-(--red-gradient);
+        @apply flex-center h-10 w-25 md:w-55 bg-red-400 rounded-2xl;
+      }
+    }
+
+    .phone-display {
+      @apply fixed inset-0 z-50 bg-black/80 backdrop-blur-2xl flex-center;
+
+      .phone-colours {
+        @apply absolute flex-center w-200 h-250 bg-white rounded-2xl flex-col gap-4;
+
+        .img-container {
+          @apply w-150;
+        }
+
+        img {
+          @apply w-full h-full;
+        }
+      }
+
+      button {
+        @apply absolute -top-4 -right-4 rounded-full w-10 h-10 bg-primary flex-center;
+      }
+
+      .options {
+        @apply flex-center text-black gap-4;
       }
     }
   }
