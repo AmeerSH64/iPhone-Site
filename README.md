@@ -24,4 +24,4 @@ The gallery page allows you to look at each model and all of the colours they ar
 
 ## How to Use
 
-First run npm install, and then run npm run dev.
+First run `npm install`, and then run `npm run dev`.
